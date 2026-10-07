@@ -1,0 +1,35 @@
+# ── Dependencies ──
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build output ──
+dist/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# ── Environment & secrets ──
+.env
+.env.*
+!.env.example
+
+# ── Logs & OS ──
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# ── IDE ──
+.vscode/
+.idea/
+
+# ── Docker volumes (data lokal, jangan ikut commit) ──
+pgdata/
+redisdata/
+mongodata/
+
+# ── FreeRADIUS local overrides ──
+backend/freeradius/mods-enabled/
+backend/freeradius/certs/
